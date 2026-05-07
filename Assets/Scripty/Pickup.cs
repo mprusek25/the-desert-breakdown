@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public Predmet dataPredmetu;
-    public void Sebrat() {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Inventar>().Pridej(dataPredmetu);
-        Destroy(gameObject);
+    public void Interact()
+    {
+        Debug.Log("Předmět sebrán!");
+        // Tady přidáš kód pro přidání do tvého inventáře
+        Destroy(gameObject); // Pro teď předmět jen zmizí
     }
 }
